@@ -1,4 +1,5 @@
 Sugary Drink Tax Analysis: A Difference-in-Differences Approach
+
 This project evaluates the causal impact of the Philadelphia excise tax on sugar-sweetened beverages using New York City (NYC) as a control group. By utilizing a Difference-in-Differences (DiD) framework, the analysis isolates the treatment effect of the policy on youth consumption rates.
 
 Technical Methodology
