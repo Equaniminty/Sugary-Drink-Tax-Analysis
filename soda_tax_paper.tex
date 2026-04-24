@@ -1,0 +1,123 @@
+%Preamble
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{geometry} 
+\usepackage{setspace}
+\usepackage{appendix}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{natbib} 
+\geometry{margin=1in}
+
+
+% Main Document
+
+\title{\huge Do Taxes on Sugary Drinks Reduce Consumption Amongst Teenagers?} 
+\author{JR Burton}
+\date {April 28, 2026}
+
+\begin{document}
+
+\maketitle
+
+\onehalfspacing
+
+\section{Introduction}
+
+In recent years, the consumption of sugar-sweetened beverages (SSBs) has become a primary focus of public health policy due to its documented links to chronic conditions, most notably Type 2 diabetes. With diabetes-related complications accounting for approximately 1.6 million deaths annually, municipal governments have increasingly sought intervention strategies. Cities such as Berkeley and Philadelphia have addressed this by implementing excise taxes on sugary drinks to disincentivize consumption and mitigate long-term health risks.
+\\
+
+This paper evaluates whether these taxes significantly impact consumption patterns among teenagers—a demographic often characterized by high SSB intake. I examine whether the price elasticity of demand and the deterrent effect of increased costs outweigh the marginal utility derived from consumption. Utilizing a Difference-in-Differences (DiD) framework, I compare teenage consumption in Philadelphia against a control group in New York City, which has not implemented a comparable tax. My analysis indicates that the Philadelphia tax induced an average 5.8\% reduction in teenage consumption over a two-year period.
+\\
+
+These findings suggest that such policies are a viable manifestation of rising health conscientiousness. The results provide empirical evidence for the effectiveness of localized taxation, suggesting that similar interventions could be a successful public health tool if expanded to other metropolitan areas across the United States.
+
+
+
+\section{Background}
+In recent years, the consumption of sugar-sweetened beverages (SSBs) has emerged as a central pillar of global public health discourse. This focus is driven by a robust body of longitudinal research linking high SSB intake to a cluster of metabolic disorders, including obesity, hypertension, and, most critically, Type 2 diabetes. The World Health Organization (WHO) identifies diabetes as a burgeoning global epidemic, with complications directly accounting for approximately 1.6 million deaths annually. This health crisis disproportionately burdens municipal healthcare infrastructures and reduces productivity.
+\\
+From an economic perspective, the consumption of SSBs represents a negative externality. The true cost of a sugary drink is not reflected in its shelf price, as the long-term medical costs and productivity losses are often socialized or borne by the public healthcare system. To internalize these costs, state and city governments have pivoted toward Pigouvian taxation—specifically excise taxes.
+\\
+Cities such as Berkeley (the first U.S. city to pass such a measure in 2014) and Philadelphia (notable for its 1.5-cent-per-ounce tax implemented in 2017) have served as the primary testing grounds for these policies. These excise taxes aim to shift the supply curve, increasing the retail price and theoretically disincentivizing consumption through the law of demand. For the econometrician, these city-level implementations provide a unique opportunity to utilize Difference-in-Differences (DiD) frameworks to isolate the causal impact of price shocks on public health outcomes.
+
+
+\section{Analysis/Methods and Findings}
+
+The Difference-in-Differences Graph \ref{figure2}
+\\
+When Philadelphia implemented a tax on sugary beverages in 2017, the goal was simple: make soda more expensive to encourage healthier choices. However, measuring the success of such a policy is difficult because soda consumption is falling across the country due to general health trends. To determine whether Philadelphia's tax actually worked, we cannot simply look at Philadelphia alone. We must compare it to a similar city that did not implement the tax—in this case, New York City.
+The provided graph \ref{figure2} tracks the percentage of teenagers who consume soda daily in two cities: Philadelphia (the treatment group) and New York City (the control group).
+Before the tax was implemented (2013–2016), both cities followed a similar downward trend. This "parallel" movement is crucial; it suggests that, under normal circumstances, these two cities react to health trends in the same way. Philadelphia started at a higher baseline (with roughly 24\% of teens drinking soda daily compared to New York’s 16\%) but the rate of change was consistent between them.
+In 2017, the gray shaded area on the graph marks the introduction of the tax. We immediately see a "divergence" in the two lines:
+The Baseline Trend: New York City continued its slow, steady decline, reaching approximately 12\% by 2019. This represents what likely would have happened in Philadelphia if no tax had been passed.
+The Philadelphia Shift: Philadelphia’s decline accelerated significantly after 2017. By 2019, Philadelphia’s consumption rate dropped to roughly 13.5\%.
+While both cities ended up with fewer daily soda drinkers, the "gap" between Philadelphia and New York City almost entirely closed. Philadelphia started 8 percentage points higher than NYC in 2013, but ended only 1.5 percentage points higher by 2019.
+Our analysis calculates that the tax was responsible for a 5.8\% reduction in teenage soda consumption beyond the normal downward trend. In simpler terms: while teenagers everywhere are drinking less soda, Philadelphia’s teenagers reduced their consumption twice as much as their peers in New York City over the same period.
+This data suggests that the "deterrence" of a higher price is an effective tool for public health. By making sugary drinks less affordable, the policy forced a behavioral change that outpaced general health conscientiousness. For policymakers in other cities, Philadelphia serves as a successful case study: localized taxation can significantly move the needle on public health outcomes, even in a short two-year window.
+\\
+
+The Regression Model \ref{figure1}
+\\
+To determine if the sugary drink tax actually changed behavior, we used a statistical tool called a Linear Probability Model. Think of this as a "probability calculator" that looks at thousands of data points to see how likely a person is to drink soda based on certain factors.
+In this study, our "Goal" was to see if the tax reduced the chance of a person drinking at least one soda per day. The "Magic Number" (The Interaction Term): In the table below, the most important number is the third row. This is the key finding of the study. It shows that after the tax was implemented, there was a 5.8\% reduction in the probability of daily soda consumption. The "Estimate" Column: This is simply the calculated "effect size." In plain English, it tells us: "Because of the tax, 5.8 out of every 100 people who used to drink soda daily have now stopped." Statistical Accuracy: While the other columns (like Standard Error and t-values) look complicated, they exist for one reason: to prove that this 5.8\% drop was not a fluke or a random coincidence. These tests confirm that our finding is highly accurate and statistically solid.
+\\
+
+The Data Table \ref{figure3}
+\\
+This table \ref{figure3} \cite{CDC_YRBSS_2019} displays the data used in our comparison. It shows the total number of people surveyed (N) each year, as well as the percentage of those individuals who drank at least one soda per day in the week before the survey. Additionally, it lists the specific tax rates (in cents) and the years those taxes were put into effect.
+
+
+\section{Discussion}
+Although Philadelphia shows an anticipatory downward trend in soda consumption between 2015 and 2017, (potentially due to public debate surrounding the tax's passage) the slope steepens significantly following the January 1, 2017 implementation. This divergence from the stable NYC control group suggests that the policy intervention accelerated the reduction beyond the existing local trend.
+\\
+\subsection{The Endogeneity of Policy Implementation}
+It is a common simplification to treat an excise tax as a purely exogenous supply-side shock. However, as noted by the political economy of public health, the implementation of a sugary drink tax is often a lagging indicator of a shift in consumer preferences. If a population's demand for sugar-sweetened beverages (SSBs) is already declining due to increased health literacy, the tax may simply accelerate an existing trend. 
+\\
+To account for this, our model utilizes a \textbf{Difference-in-Differences (DiD)} framework. By comparing Philadelphia to cities with similar health-literacy trends but no tax implementation, we can isolate the specific effect of the price increase from the underlying shift in consumer preference.
+\\
+
+\subsection{Others' Work}
+Among the relevant studies in this area, there is a general consensus that most sugar-sweetened beverages are packed with calories and have little to no nutritional value. One 2019 study \cite{doi:10.2105/AJPH.2018.304803} found that a 15\% to 20\% reduction in consumption of sugary beverages, if expanded nationally, would reduce the health care costs over the average American life span by \$270 per person, or \$45 billion in total. This further contextualizes the tax and the shift in health conscientiousness that motivated it. It also gives an even stronger motivation to expand the tax to a national scale.
+
+
+\section{Conclusion}
+I conclude that the implementation of a sugary drink tax in Philadelphia resulted in a 5.8\% reduction in sugary drink consumption among teenagers over a 2 year period from 2017-2019.
+
+Seeing that the tax culminated in the reduction of SSB's and their associated negative externalities, my policy recommendation is to impose similar taxes in every city in the United States.
+
+\newpage
+\nocite{doi:10.2105/AJPH.2018.304803}
+\nocite{CDC_YRBSS_2019}
+\bibliographystyle{apalike}
+\bibliography{apha_ajph109_276}
+
+
+\newpage
+\appendix
+\section{Figures}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Figures & Table/Figure Reg 2367 .png}
+    \caption{Regression Model, Ouput, and Hypotheses by Author}
+    \label{figure1}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Figures & Table/Graph 2367.png}
+    \caption{Graph of Daily Soda Consumption Trends in Philadelphia vs NYC by Author}
+    \label{figure2}
+\end{figure}
+
+\section{Tables}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Figures & Table/Table 2367.png}
+    \caption{Data Table from YRBSS Survey from CDC Website}
+    \label{figure3}
+\end{figure}
+
+\end{document}
